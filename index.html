@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Ramkrishna Poddar · Video Editor</title>
+<link rel="stylesheet" href="style.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<canvas id="canvas"></canvas>
+<div class="spotlight" id="spotlight"></div>
+<div id="cur"></div>
+<div id="cur-ring"></div>
+
+<nav id="nav">
+  <div class="nav-logo">RK<span>.</span></div>
+  <ul class="nav-links">
+    <li><a href="#hero"    class="nl">Home</a></li>
+    <li><a href="#about"   class="nl">About</a></li>
+    <li><a href="#course"  class="nl">Course</a></li>
+    <li><a href="#work"    class="nl">Work</a></li>
+    <li><a href="#process" class="nl">Process</a></li>
+    <li><a href="#contact" class="nl">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-btn"><i class="fa-solid fa-briefcase"></i> Hire Us</a>
+  <div class="burger" onclick="toggleMenu()">&#9776;</div>
+</nav>
+<div class="mob-menu" id="mob-menu">
+  <a href="#hero"    onclick="toggleMenu()">Home</a>
+  <a href="#about"   onclick="toggleMenu()">About</a>
+  <a href="#course"  onclick="toggleMenu()">Course</a>
+  <a href="#work"    onclick="toggleMenu()">Work</a>
+  <a href="#process" onclick="toggleMenu()">Process</a>
+  <a href="#contact" onclick="toggleMenu()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left">
+    <div class="hero-tag"><span></span> VIDEO EDITOR &amp; MOTION DESIGNER</div>
+    <h1 class="hero-name">
+      <span class="hn1">RAMKRISHNA</span>
+      <span class="hn2">PODDAR</span>
+    </h1>
+    <p class="hero-sub">Transforming visions,<br/><em>one frame at a time</em></p>
+    <div class="hero-stats">
+      <div class="hs"><div class="hs-n">8+</div><div class="hs-l">Years</div></div>
+      <div class="hs-div"></div>
+      <div class="hs"><div class="hs-n">500+</div><div class="hs-l">Videos</div></div>
+      <div class="hs-div"></div>
+      <div class="hs"><div class="hs-n">3</div><div class="hs-l">Pro Tools</div></div>
+    </div>
+    <div class="hero-btns">
+      <a href="#work"    class="btn-p"><i class="fa-solid fa-play"></i> View Work</a>
+      <a href="#contact" class="btn-o">Let's Talk</a>
+    </div>
+    <div class="soft-icons">
+      <div class="si-label">TOOLS</div>
+      <div class="si-row">
+        <div class="si-item" data-tip="Adobe Premiere Pro"><i class="fa-solid fa-video"></i><span>Premiere</span></div>
+        <div class="si-item" data-tip="After Effects"><i class="fa-solid fa-wand-magic-sparkles"></i><span>After Effects</span></div>
+        <div class="si-item" data-tip="DaVinci Resolve"><i class="fa-solid fa-film"></i><span>DaVinci</span></div>
+        <div class="si-item" data-tip="Motion Design"><i class="fa-solid fa-bezier-curve"></i><span>Motion</span></div>
+        <div class="si-item" data-tip="Color Grading"><i class="fa-solid fa-palette"></i><span>Colour</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="img-wrap">
+      <div class="img-glow"></div>
+      <img src="assets/images/ramkrishna.jpeg" alt="Ramkrishna Poddar" class="hero-img"
+           onerror="this.style.display='none';document.querySelector('.img-fb').style.display='flex'"/>
+      <div class="img-fb">RK</div>
+      <div class="img-bd"></div>
+      <div class="fc1"><div class="fc-n">500+</div><div class="fc-l">VIDEOS EDITED</div></div>
+      <div class="fc2"><div class="fc-dot"></div><div class="fc-l">Available</div></div>
+    </div>
+  </div>
+  <div class="scroll-hint">scroll &#8595;</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="sec-tag ani">// About</div>
+  <div class="about-wrap">
+    <div class="ani">
+      <h2 class="sec-h">Crafting Stories<br/><span>Frame by Frame</span></h2>
+      <p class="body-text">With over <strong>8 years of professional experience</strong>, I specialise in transforming raw footage into cinematic experiences. Started in 2022 teaching people how to shoot and edit — evolved into a full creative production workflow.</p>
+      <p class="body-text">I've delivered <strong>500+ videos</strong> spanning storyline content, product reviews, short-form social and long-form cinematic work.</p>
+      <div class="skill-tags">
+        <span class="st"><i class="fa-solid fa-video"></i> Premiere Pro</span>
+        <span class="st"><i class="fa-solid fa-wand-magic-sparkles"></i> After Effects</span>
+        <span class="st"><i class="fa-solid fa-film"></i> DaVinci Resolve</span>
+        <span class="st"><i class="fa-solid fa-bezier-curve"></i> Motion Design</span>
+        <span class="st"><i class="fa-solid fa-palette"></i> Color Grading</span>
+        <span class="st"><i class="fa-solid fa-bolt"></i> VFX</span>
+        <span class="st"><i class="fa-brands fa-youtube"></i> Short-form</span>
+        <span class="st"><i class="fa-solid fa-clapperboard"></i> Storyline</span>
+      </div>
+      <div class="ainfo">
+        <div class="ai-row"><i class="fa-solid fa-envelope"></i><span>ramkrishnapoddar9&#64;gmail.com</span></div>
+        <div class="ai-row"><i class="fa-brands fa-youtube"></i><a href="https://www.youtube.com/@Ramkrishna.22" target="_blank" style="color:inherit;text-decoration:none">youtube.com/@Ramkrishna.22</a></div>
+        <div class="ai-row"><i class="fa-brands fa-instagram"></i><span>instagram · ramkrishna.22</span></div>
+        <div class="ai-row"><i class="fa-solid fa-circle-dot" style="color:#4ade80"></i><span style="color:#4ade80">Available for Projects</span></div>
+      </div>
+    </div>
+    <div class="tool-grid ani">
+      <div class="tc"><div class="tc-icon"><i class="fa-solid fa-video"></i></div><div class="tc-name">Premiere Pro</div><div class="tc-desc">Industry-standard NLE for precision editing and narrative structure</div><div class="tc-bar"><div class="tc-fill" data-w="95"></div></div><div class="tc-yr">8 years</div></div>
+      <div class="tc"><div class="tc-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div><div class="tc-name">After Effects</div><div class="tc-desc">Motion graphics, VFX compositing and cinematic visual effects</div><div class="tc-bar"><div class="tc-fill" data-w="90"></div></div><div class="tc-yr">7 years</div></div>
+      <div class="tc"><div class="tc-icon"><i class="fa-solid fa-film"></i></div><div class="tc-name">DaVinci Resolve</div><div class="tc-desc">Professional colour grading, HDR finishing and audio mixing</div><div class="tc-bar"><div class="tc-fill" data-w="85"></div></div><div class="tc-yr">5 years</div></div>
+      <div class="tc"><div class="tc-icon"><i class="fa-solid fa-bezier-curve"></i></div><div class="tc-name">Motion Design</div><div class="tc-desc">Animated titles, kinetic typography and visual identity motion</div><div class="tc-bar"><div class="tc-fill" data-w="88"></div></div><div class="tc-yr">6 years</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- COURSE -->
+<section id="course">
+  <div class="sec-tag ani">// Course</div>
+  <div class="course-wrap ani">
+    <div class="course-left">
+      <div class="course-badge"><i class="fa-solid fa-graduation-cap"></i> FEATURED COURSE</div>
+      <h2 class="sec-h" style="margin-bottom:14px">Premiere Pro<br/><span>Essentials</span></h2>
+      <p class="body-text">A Beginner's Guide to Editing Like a Pro. Unlock the secrets of professional editing — covers all essential aspects of Adobe Premiere Pro.</p>
+
+      <div class="course-highlights">
+        <div class="ch-item"><i class="fa-solid fa-circle-check"></i> Timeline & workspace setup</div>
+        <div class="ch-item"><i class="fa-solid fa-circle-check"></i> Cuts, transitions & effects</div>
+        <div class="ch-item"><i class="fa-solid fa-circle-check"></i> Audio mixing & colour basics</div>
+        <div class="ch-item"><i class="fa-solid fa-circle-check"></i> Export for YouTube & Reels</div>
+      </div>
+
+      <div class="course-meta">
+        <div class="cm-item"><i class="fa-solid fa-layer-group"></i> 8 Modules</div>
+        <div class="cm-item"><i class="fa-solid fa-language"></i> Hindi</div>
+        <div class="cm-item"><i class="fa-solid fa-infinity"></i> Lifetime Access</div>
+        <div class="cm-item"><i class="fa-solid fa-certificate"></i> Certificate</div>
+      </div>
+      <div class="course-price">
+        <span class="cp-new">&#8377;699</span>
+        <span class="cp-old">&#8377;2999</span>
+        <span class="cp-off">77% OFF</span>
+      </div>
+      <a href="https://ramkrishnapoddar.graphy.com/" target="_blank" class="btn-p course-btn">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i> Enroll Now
+      </a>
+      <p class="course-note">More courses coming soon &middot; <a href="https://ramkrishnapoddar.graphy.com/" target="_blank" style="color:var(--blue);text-decoration:none">View All &#8599;</a></p>
+    </div>
+    <div class="course-right">
+      <a href="https://ramkrishnapoddar.graphy.com/" target="_blank" class="course-img-link">
+        <div class="course-img-wrap">
+          <div class="course-img-glow"></div>
+          <img src="assets/images/course-thumb.jpg" alt="Premiere Pro Course" class="course-img"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+          <div class="course-img-fb">
+            <i class="fa-solid fa-video" style="font-size:48px;color:var(--blue);opacity:0.4"></i>
+            <div style="margin-top:12px;font-family:'Playfair Display',serif;font-size:18px;text-align:center;color:var(--white);opacity:0.7;line-height:1.3">Premiere Pro<br/>Essentials</div>
+          </div>
+          <div class="course-play-overlay">
+            <div class="course-play-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            <div class="course-play-label">Visit Course</div>
+          </div>
+        </div>
+      </a>
+      <!-- Course stats below image -->
+      <div class="course-stats">
+        <div class="cstat"><div class="cstat-n">500+</div><div class="cstat-l">Students</div></div>
+        <div class="cstat-div"></div>
+        <div class="cstat"><div class="cstat-n">4.9★</div><div class="cstat-l">Rating</div></div>
+        <div class="cstat-div"></div>
+        <div class="cstat"><div class="cstat-n">8</div><div class="cstat-l">Modules</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work">
+  <div class="sec-tag ani">// Selected Work</div>
+  <div class="work-head ani">
+    <div>
+      <h2 class="sec-h">Edit<br/><span>Reel</span></h2>
+      <p class="body-text" style="max-width:460px">Storyline videos, product reviews, tutorials and short-form edits from the channel.</p>
+    </div>
+    <div class="work-filter">
+      <button class="wf active" onclick="filterWork('all',this)">All</button>
+      <button class="wf" onclick="filterWork('storytelling',this)">Storytelling</button>
+      <button class="wf" onclick="filterWork('productreview',this)">Product Review</button>
+      <button class="wf" onclick="filterWork('shortform',this)">Short Form</button>
+    </div>
+  </div>
+  <div class="video-grid">
+
+    <!-- STORYTELLING -->
+    <div class="vc ani" data-cat="storytelling">
+      <div class="vc-preview" onclick="openModal('https://www.youtube.com/embed/G5PNypDgDnw','Cinematic Story Video')">
+        <div class="vc-thumb vc-dark">
+          <div class="vc-play-btn"><i class="fa-solid fa-play"></i></div>
+          <div class="vc-hover-label">Play Video</div>
+          <i class="fa-solid fa-clapperboard vc-bg-icon"></i>
+        </div>
+      </div>
+      <div class="vc-info">
+        <div class="vc-cat"><i class="fa-solid fa-clapperboard"></i> STORYTELLING</div>
+        <div class="vc-title">Cinematic Story Video</div>
+        <div class="vc-desc">Narrative-driven cinematic edit with structured storytelling.</div>
+      </div>
+    </div>
+
+    <div class="vc ani" data-cat="storytelling">
+      <div class="vc-preview" onclick="openModal('https://www.youtube.com/embed/_p9q6KB4bHQ','Learn Video Editing in 5 Min')">
+        <div class="vc-thumb" style="background-image:url('https://img.youtube.com/vi/_p9q6KB4bHQ/maxresdefault.jpg')">
+          <div class="vc-play-btn"><i class="fa-solid fa-play"></i></div>
+          <div class="vc-hover-label">Play Video</div>
+        </div>
+      </div>
+      <div class="vc-info">
+        <div class="vc-cat"><i class="fa-solid fa-video"></i> STORYTELLING</div>
+        <div class="vc-title">Learn Video Editing in 5 Min</div>
+        <div class="vc-desc">Fast-track editing tutorial — everything you need to start editing.</div>
+      </div>
+    </div>
+
+    <!-- PRODUCT REVIEW -->
+    <div class="vc ani" data-cat="productreview">
+      <div class="vc-preview" onclick="openModal('https://www.youtube.com/embed/X_UHOw77Viw','Best Video Editing Laptop 2024')">
+        <div class="vc-thumb" style="background-image:url('https://img.youtube.com/vi/X_UHOw77Viw/maxresdefault.jpg')">
+          <div class="vc-play-btn"><i class="fa-solid fa-play"></i></div>
+          <div class="vc-hover-label">Play Video</div>
+        </div>
+      </div>
+      <div class="vc-info">
+        <div class="vc-cat"><i class="fa-solid fa-star"></i> PRODUCT REVIEW</div>
+        <div class="vc-title">Best Editing Laptop 2024</div>
+        <div class="vc-desc">BEST Video Editing Laptop In 2024 | Review and Giveaway.</div>
+      </div>
+    </div>
+
+    <div class="vc ani" data-cat="productreview">
+      <div class="vc-preview" onclick="openModal('https://drive.google.com/file/d/1WrqTMN2p8mRClvheS8hOuT2uDgmVxmtU/preview','iPhone 15 Camera Test for Filmmakers')">
+        <div class="vc-thumb vc-dark">
+          <div class="vc-play-btn"><i class="fa-solid fa-play"></i></div>
+          <div class="vc-hover-label">Play Video</div>
+          <i class="fa-solid fa-mobile-screen vc-bg-icon"></i>
+        </div>
+      </div>
+      <div class="vc-info">
+        <div class="vc-cat"><i class="fa-solid fa-mobile-screen"></i> PRODUCT REVIEW</div>
+        <div class="vc-title">iPhone 15 Camera Test for Filmmakers</div>
+        <div class="vc-desc">Hands-on camera test — is iPhone 15 good enough for filmmaking?</div>
+      </div>
+    </div>
+
+    <div class="vc ani" data-cat="productreview">
+      <div class="vc-preview" onclick="openModal('https://drive.google.com/file/d/10o6z5AmdQShwWjj5WiwTLKgV1_IM8I-t/preview','Premiere Pro vs DaVinci Resolve')">
+        <div class="vc-thumb vc-dark">
+          <div class="vc-play-btn"><i class="fa-solid fa-play"></i></div>
+          <div class="vc-hover-label">Play Video</div>
+          <i class="fa-solid fa-scale-balanced vc-bg-icon"></i>
+        </div>
+      </div>
+      <div class="vc-info">
+        <div class="vc-cat"><i class="fa-solid fa-scale-balanced"></i> PRODUCT REVIEW</div>
+        <div class="vc-title">Premiere Pro vs DaVinci Resolve</div>
+        <div class="vc-desc">Head-to-head comparison — which editor wins for creators?</div>
+      </div>
+    </div>
+
+    <!-- SHORT FORM — all 3 properly tagged -->
+    <div class="vc ani" data-cat="shortform">
+      <div class="vc-preview" onclick="openModal('https://drive.google.com/file/d/1r758hXIzgSZgrOVSZNROKS8ErGfSjGpv/preview','How to Edit Motion Graphic Scenes Fast')">
+        <div class="vc-thumb vc-dark">
+          <div class="vc-play-btn"><i class="fa-solid fa-play"></i></div>
+          <div class="vc-hover-label">Play Video</div>
+          <i class="fa-solid fa-bezier-curve vc-bg-icon"></i>
+        </div>
+      </div>
+      <div class="vc-info">
+        <div class="vc-cat"><i class="fa-brands fa-youtube"></i> SHORT FORM</div>
+        <div class="vc-title">How to Edit Motion Graphic Scenes Fast</div>
+        <div class="vc-desc">Speed up your motion graphic workflow with these pro tips.</div>
+      </div>
+    </div>
+
+    <div class="vc ani" data-cat="shortform">
+      <div class="vc-preview" onclick="openModal('https://www.youtube.com/embed/VFLt1XwLMcQ','How to Make Viral Videos')">
+        <div class="vc-thumb" style="background-image:url('https://img.youtube.com/vi/VFLt1XwLMcQ/maxresdefault.jpg')">
+          <div class="vc-play-btn"><i class="fa-solid fa-play"></i></div>
+          <div class="vc-hover-label">Play Video</div>
+        </div>
+      </div>
+      <div class="vc-info">
+        <div class="vc-cat"><i class="fa-brands fa-youtube"></i> SHORT FORM</div>
+        <div class="vc-title">How to Make Viral Videos</div>
+        <div class="vc-desc">The formula behind viral short-form content that blows up.</div>
+      </div>
+    </div>
+
+    <div class="vc ani" data-cat="shortform">
+      <div class="vc-preview" onclick="openModal('https://www.youtube.com/embed/iUAIKRSlCyc','Short Form Cinematic')">
+        <div class="vc-thumb" style="background-image:url('https://img.youtube.com/vi/iUAIKRSlCyc/maxresdefault.jpg')">
+          <div class="vc-play-btn"><i class="fa-solid fa-play"></i></div>
+          <div class="vc-hover-label">Play Video</div>
+        </div>
+      </div>
+      <div class="vc-info">
+        <div class="vc-cat"><i class="fa-solid fa-bolt"></i> SHORT FORM</div>
+        <div class="vc-title">Short Form Cinematic</div>
+        <div class="vc-desc">High-impact vertical short crafted for maximum visual impact.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- VIDEO MODAL -->
+<div class="modal-overlay" id="modal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+    <div class="modal-title" id="modal-title"></div>
+    <div class="modal-frame"><iframe id="modal-iframe" src="" allowfullscreen></iframe></div>
+  </div>
+</div>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="sec-tag ani">// Process</div>
+  <div class="work-head ani">
+    <h2 class="sec-h">The<br/><span>Process</span></h2>
+    <p class="body-text" style="max-width:460px">Every edit follows a deliberate creative workflow.</p>
+  </div>
+  <div class="process-grid">
+    <div class="pc ani"><div class="pc-n">01</div><div class="pc-icon"><i class="fa-solid fa-lightbulb"></i></div><div class="pc-title">Brief and Vision</div><div class="pc-desc">Understanding story, audience and emotion before a single cut.</div></div>
+    <div class="pc ani"><div class="pc-n">02</div><div class="pc-icon"><i class="fa-solid fa-scissors"></i></div><div class="pc-title">Rough Cut</div><div class="pc-desc">Structuring narrative arc — pacing, rhythm and flow first.</div></div>
+    <div class="pc ani"><div class="pc-n">03</div><div class="pc-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div><div class="pc-title">Motion and VFX</div><div class="pc-desc">Motion graphics and visual effects to elevate the piece.</div></div>
+    <div class="pc ani"><div class="pc-n">04</div><div class="pc-icon"><i class="fa-solid fa-palette"></i></div><div class="pc-title">Colour and Sound</div><div class="pc-desc">Colour grading for mood, music sync and sound design.</div></div>
+    <div class="pc ani"><div class="pc-n">05</div><div class="pc-icon"><i class="fa-solid fa-circle-check"></i></div><div class="pc-title">Delivery</div><div class="pc-desc">Platform-optimised export. Revisions until perfect.</div></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="sec-tag ani" style="justify-content:center">// Contact</div>
+  <h2 class="sec-h ani" style="text-align:center;font-size:clamp(36px,5vw,70px)">Let's Create<br/><span>Together</span></h2>
+  <p class="body-text ani" style="text-align:center;max-width:500px;margin:0 auto 48px">Available for freelance projects, collaborations and long-term partnerships.</p>
+  <div class="contact-wrap">
+    <div class="contact-left ani">
+      <div class="cl-title">Reach Out</div>
+      <div class="soc-links">
+        <a href="mailto:ramkrishnapoddar9@gmail.com" class="soc-item">
+          <div class="soc-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div class="soc-text"><div class="soc-name">Email</div><div class="soc-val">ramkrishnapoddar9@gmail.com</div></div>
+          <i class="fa-solid fa-arrow-right soc-arrow"></i>
+        </a>
+        <a href="https://www.youtube.com/@Ramkrishna.22" target="_blank" class="soc-item">
+          <div class="soc-icon soc-yt"><i class="fa-brands fa-youtube"></i></div>
+          <div class="soc-text"><div class="soc-name">YouTube</div><div class="soc-val">@Ramkrishna.22</div></div>
+          <i class="fa-solid fa-arrow-right soc-arrow"></i>
+        </a>
+        <a href="https://instagram.com/ramkrishna.22" target="_blank" class="soc-item">
+          <div class="soc-icon soc-ig"><i class="fa-brands fa-instagram"></i></div>
+          <div class="soc-text"><div class="soc-name">Instagram</div><div class="soc-val">ramkrishna.22</div></div>
+          <i class="fa-solid fa-arrow-right soc-arrow"></i>
+        </a>
+        <a href="https://ramkrishnapoddar.graphy.com/" target="_blank" class="soc-item">
+          <div class="soc-icon soc-course"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="soc-text"><div class="soc-name">Courses</div><div class="soc-val">ramkrishnapoddar.graphy.com</div></div>
+          <i class="fa-solid fa-arrow-right soc-arrow"></i>
+        </a>
+      </div>
+      <div class="avail-card">
+        <div class="ac-dot"></div>
+        <div><div class="ac-title">Currently Available</div><div class="ac-sub">Open for projects · Response within 24h</div></div>
+      </div>
+    </div>
+
+    <form class="contact-form ani" id="cform" action="https://formspree.io/f/mvzwygwb" method="POST">
+      <div class="cf-title">Send a Message</div>
+      <div class="cf-row">
+        <div class="cf-field"><label>NAME</label><input type="text" name="name" placeholder="Your name" required/></div>
+        <div class="cf-field"><label>EMAIL</label><input type="email" name="email" placeholder="your@email.com" required/></div>
+      </div>
+      <div class="cf-field">
+        <label>PROJECT TYPE</label>
+        <select name="project_type" required>
+          <option value="" disabled selected>Select a service</option>
+          <option>Video Editing</option>
+          <option>Motion Design / VFX</option>
+          <option>Colour Grading</option>
+          <option>Short-form Content</option>
+          <option>Long-form / Storyline</option>
+          <option>Product Review</option>
+          <option>Course Enquiry</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="cf-field">
+        <label>BUDGET RANGE</label>
+        <select name="budget">
+          <option value="" disabled selected>Select budget</option>
+          <option>Under Rs.5,000</option>
+          <option>Rs.5,000 to Rs.15,000</option>
+          <option>Rs.15,000 to Rs.30,000</option>
+          <option>Rs.30,000+</option>
+          <option>Let's discuss</option>
+        </select>
+      </div>
+      <div class="cf-field"><label>MESSAGE</label><textarea name="message" rows="4" placeholder="Tell me about your project..."></textarea></div>
+      <input type="hidden" name="_next" value="https://ramkrishna.vercel.app/#contact"/>
+      <button type="submit" class="btn-p" style="width:100%"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+      <div class="cf-note" id="cf-note"></div>
+    </form>
+  </div>
+</section>
+
+<!-- THANK YOU PAGE -->
+<div class="thankyou-overlay" id="thankyou">
+  <div class="ty-box">
+    <div class="ty-icon"><i class="fa-solid fa-circle-check"></i></div>
+    <h3 class="ty-title">Message Sent!</h3>
+    <p class="ty-sub">Thank you for reaching out. I will get back to you within 24 hours.</p>
+    <button class="btn-p" onclick="closeThankyou()"><i class="fa-solid fa-house"></i> Back to Website</button>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">RAMKRISHNA PODDAR</div>
+  <div class="footer-links">
+    <a href="https://ramkrishnapoddar.graphy.com/" target="_blank"><i class="fa-solid fa-graduation-cap"></i> Courses</a>
+    <a href="https://www.youtube.com/@Ramkrishna.22" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a>
+    <a href="https://instagram.com/ramkrishna.22" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+    <a href="mailto:ramkrishnapoddar9@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+  </div>
+  <p class="footer-copy">&#169; 2025 Ramkrishna Poddar &middot; All Rights Reserved &middot; Video Editor and Motion Designer</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
